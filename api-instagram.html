@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>API INSTAGRAM</title>
 	<style type="text/css">
-		a img{ 
+		a img {
 			width: 25%;
 		}
 	</style>
 </head>
+
 <body>
 	<h1 style="text-align: center">API INSTAGRAM</h1>
-    	<div id="instafeed-container"></div>
+	<div id="instafeed-container"></div>
 
 
-	
+
 	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 	<script type="text/javascript">
-	var userFeed = new Instafeed({
-		get: 'user',
-		target: "instafeed-container",
-    	resolution: 'low_resolution',
-		accessToken: 'IGQVJWTzBteEZA0RjJueEVoYmFNbm5QbGNtVDB1WDlsQk9ZANHdxcDZAqT19meVhkZAHJHRXZAuU2wwSTZAaNlBOSzdNRFNjQ2I4LTk1ZAEJQVS0zRGRmYTZAPdU1DQVVWYkNKRngzdUhnd2dTTl9INWc2VzhYOQZDZD'
-	});
-	userFeed.run();
+		var userFeed = new Instafeed({
+			get: 'user',
+			target: "instafeed-container",
+			resolution: 'low_resolution',
+			accessToken: 'IGQVJWTzBteEZA0RjJueEVoYmFNbm5QbGNtVDB1WDlsQk9ZANHdxcDZAqT19meVhkZAHJHRXZAuU2wwSTZAaNlBOSzdNRFNjQ2I4LTk1ZAEJQVS0zRGRmYTZAPdU1DQVVWYkNKRngzdUhnd2dTTl9INWc2VzhYOQZDZD'
+		});
+		userFeed.run();
 	</script>
 	<!-- 
 		LINK PARA RENOVAR TOKEN ===>
 		https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=IGQVJWTzBteEZA0RjJueEVoYmFNbm5QbGNtVDB1WDlsQk9ZANHdxcDZAqT19meVhkZAHJHRXZAuU2wwSTZAaNlBOSzdNRFNjQ2I4LTk1ZAEJQVS0zRGRmYTZAPdU1DQVVWYkNKRngzdUhnd2dTTl9INWc2VzhYOQZDZD
 	 -->
 </body>
+
 </html>
